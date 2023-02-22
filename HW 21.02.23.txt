@@ -1,0 +1,23 @@
+Задача 1:
+let answer = prompt ("Введите число");
+console.log (+answer * +answer);
+
+
+Задача 2:
+let number = prompt ("Введите число");
+ if (+number === 0) {
+     console.log ("Число равно нулю");
+ }else if (+number % 2 === 0) {
+     console.log("Число четное");
+ } else {
+console.log ("Число нечетное")
+}
+
+
+Задача 3:
+let userNumber = prompt("Введите значение");
+if (!isNaN(userNumber)) {
+  console.log("Это значение можно преобразовать в число");
+} else {
+  console.log("Это значение преобразовать в число не получится. Получится NaN");
+}
