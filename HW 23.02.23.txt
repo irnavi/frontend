@@ -1,0 +1,58 @@
+Задача 1:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let result1 = 1;
+for(let i = 0; i < array.length; i ++){
+  result1 *= array[i];
+}
+console.log(result1);
+
+Задача 2:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let result = 0;
+for(let i = 0; i < array.length; i ++){
+  result = array[i] * array[i] + result;
+}
+console.log(result);
+
+Задача 3:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let maxResult = array[0];
+for(let i = 1; i < array.length; i ++){
+  if(array[i] > maxResult){
+    maxResult = array[i];
+  }
+}
+console.log(maxResult);
+
+Задача 4:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let minResult = array[0];
+for(let i = 1; i < array.length; i ++){
+  if(array[i] < minResult){
+    minResult = array[i];
+  }
+}
+console.log(minResult);
+
+
+Задача 5:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let mean = 0;
+for(let i = 0; i < array.length; i ++){
+   mean += array[i];
+    
+  }
+
+console.log(mean / array.length);
+
+
+Задача 6:
+const array = [8, 5, 1, 9, 4, 3, 6, 2];
+let sum = 0;
+for(let i = 0; i < array.length; i ++){
+  if(array[i] > 0){
+    sum ++;
+  }
+  }
+
+console.log(sum);
