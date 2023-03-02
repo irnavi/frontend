@@ -1,0 +1,47 @@
+Задача 1:
+var arr = {
+  'ru': ['голубой', 'красный', 'зеленый'],
+  'en': ['blue', 'red', 'green'],
+};
+
+console.log(arr['ru'][0]);
+
+Задача 2:
+const obj = {
+  Коля: '200',
+  Вася: '300',
+  Петя: '400',
+};
+for (let key in obj) {
+  console.log(key + " - зарплата " + obj[key] + " долларов.");
+}
+
+
+Задача 3:
+const obj = {
+js: ['jQuery', 'Angular'],
+php: 'hello', 
+css: 'world'
+}
+console.log(obj.js[0]);
+
+Задача 4:
+const arr = {
+    ru: ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"],
+    en: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+
+}
+console.log(arr["ru"][0],arr["en"][2]);
+
+Задача 5: 
+
+const obj = {
+    '1': 'понедельник',
+    '2': 'вторник',
+    '3': 'среда',
+    '4': 'четверг',
+    '5': 'пятница',
+    '6': 'суббота',
+    '7': 'воскресенье',
+}
+console.log(obj[4]);
