@@ -1,0 +1,88 @@
+Задача 1:
+function createString(number, string){
+    let obj = {};
+    for (let i = 0; i < number; i++){
+      obj[string + i] = string + i;
+    }
+    console.log(obj);
+  }
+
+  createString(4, "cat");
+  
+
+Задача 2:
+function sumOfEvenNumbers(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i ++){
+    if(arr[i] % 2 === 0 ){
+        sum += arr[i];
+    }
+}
+    return sum;
+}
+const array = [8,5,1,9,4,3,6,2];
+let EvenSum = sumOfEvenNumbers(array);
+console.log(EvenSum);
+
+
+function sumOfOddNumbers(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i ++){
+    if(arr[i] % 2 !== 0 ){
+        sum += arr[i];
+    }
+}
+    return sum;
+}
+
+let OddSum = sumOfOddNumbers(array);
+console.log(OddSum);
+
+
+function findMaxSum(sum1, sum2){
+    maxSum = 0;
+ if(sum1 > sum2){
+    maxSum = sum1;
+ }else{
+    maxSum = sum2;
+ }
+ console.log(maxSum);
+}
+findMaxSum(EvenSum,OddSum);
+
+Задача 3:
+function createFahrenheit(num){
+    let result = num * 1.8 + 32;
+    return result;
+  }
+  let num = 0;
+  let result = createFahrenheit(num);
+  console.log(result);
+
+Задача 4:
+function maxVal(arr){
+let maxResult = arr[0];
+for(let i = 1; i < arr.length; i ++){
+  if(arr[i] > maxResult){
+    maxResult = arr[i];
+  }
+}
+  return maxResult;
+}
+const array = [8,5,1,9,4,3,6,2];
+const maxNum = maxVal(array);
+console.log(maxNum);
+
+Задача 5:
+function minVal(arr){
+let minResult = arr[0];
+for(let i = 1; i < arr.length; i ++){
+  if(arr[i] < minResult){
+    minResult = arr[i];
+  }
+}
+  return minResult;
+}
+const array = [8,5,1,9,4,3,6,2];
+const minNum = minVal(array);
+console.log(minNum);
